@@ -1,9 +1,15 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand"><router-link style="text-decoration: none; color: inherit;" to="/">Home page</router-link></a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link"><h5>Welcome !!!</h5></a>
+      </li>
+    </ul>  
+  </div>
+</nav>
     <router-view/>
   </div>
 </template>
